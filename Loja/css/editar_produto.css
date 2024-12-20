@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal da página como Arial, com uma fonte alternativa sans-serif caso Arial não esteja disponível */
+    margin: 0; /* Remove a margem padrão ao redor do body */
+    padding: 0; /* Remove o padding (espaçamento interno) padrão ao redor do body */
+    background-color: #f4f4f9; /* Define a cor de fundo do body como um tom suave de cinza claro */
+}
+
+.edit-container {
+    width: 80%; /* Define a largura do contêiner principal como 80% da largura da tela */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona um padding de 20px em todos os lados do contêiner */
+    background-color: white; /* Define o fundo do contêiner como branco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do contêiner */
+    border-radius: 8px; /* Arredonda os cantos do contêiner */
+}
+
+header {
+    text-align: center; /* Centraliza o conteúdo dentro do header */
+    margin-bottom: 20px; /* Adiciona um espaço de 20px abaixo do header */
+}
+
+header h1 {
+    font-size: 2rem; /* Define o tamanho da fonte do título como 2rem (relativo ao tamanho da fonte base) */
+    color: #333; /* Define a cor do título como um tom escuro de cinza */
+}
+
+header a {
+    display: block; /* Transforma o link em um bloco, fazendo com que ocupe toda a largura disponível */
+    margin-top: 10px; /* Adiciona um espaço de 10px acima do link */
+    text-align: center; /* Centraliza o texto do link */
+    color: #4CAF50; /* Define a cor do link como verde */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    font-weight: bold; /* Torna o texto do link em negrito */
+}
+
+header a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao link quando o mouse passa por cima (efeito de hover) */
+}
+
+form {
+    display: flex; /* Define o layout do formulário como flexbox, permitindo o controle do alinhamento e espaçamento dos elementos */
+    flex-direction: column; /* Organiza os elementos do formulário verticalmente (em uma coluna) */
+}
+
+form label {
+    margin: 10px 0 5px; /* Adiciona um espaço de 10px acima e 5px abaixo dos rótulos dos campos */
+    font-weight: bold; /* Torna o texto do rótulo em negrito */
+    color: #333; /* Define a cor do rótulo como um tom escuro de cinza */
+}
+
+form input, form textarea {
+    padding: 10px; /* Adiciona um padding de 10px em todos os lados dos campos de entrada e textarea */
+    font-size: 1rem; /* Define o tamanho da fonte dos campos como 1rem (relativo ao tamanho da fonte base) */
+    margin-bottom: 15px; /* Adiciona um espaço de 15px abaixo dos campos de entrada e textarea */
+    border: 1px solid #ccc; /* Define a borda dos campos como uma linha sólida de 1px de cor cinza claro */
+    border-radius: 5px; /* Arredonda os cantos dos campos de entrada e textarea */
+}
+
+form button {
+    padding: 10px; /* Adiciona um padding de 10px em todos os lados do botão */
+    background-color: #4CAF50; /* Define a cor de fundo do botão como verde */
+    color: white; /* Define a cor do texto do botão como branco */
+    font-size: 1.1rem; /* Define o tamanho da fonte do botão como 1.1rem (relativo ao tamanho da fonte base) */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para um ponteiro (mãozinha) ao passar o mouse sobre o botão */
+}
+
+form button:hover {
+    background-color: #45a049; /* Altera a cor de fundo do botão para um tom mais escuro de verde quando o mouse passa por cima (efeito de hover) */
+}
+
+.image-preview {
+    text-align: center; /* Centraliza o conteúdo dentro do contêiner de pré-visualização da imagem */
+    margin-top: 20px; /* Adiciona um espaço de 20px acima do contêiner de pré-visualização */
+}
+
+.image-preview img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner de pré-visualização */
+    max-height: 200px; /* Limita a altura da imagem a 200px, garantindo que ela não fique muito grande */
+    border: 1px solid #ccc; /* Adiciona uma borda de 1px cinza claro ao redor da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+    display: none; /* Inicialmente a imagem é escondida, sendo exibida apenas quando o usuário selecionar uma imagem para pré-visualizar */
+}
+
+/* Estilo para os botões "Voltar" e "Salvar Alterações" */
+.form-buttons {
+    display: flex; /* Organiza os botões em linha */
+    justify-content: space-between; /* Distribui os botões igualmente, com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-top: 20px; /* Adiciona espaço acima dos botões */
+}
+
+button {
+    padding: 10px 20px; /* Tamanho do botão "Salvar Alterações" */
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    border: none; /* Remove borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor em formato de mãozinha */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo do botão em hover */
+}
+
+.back-button {
+    padding: 10px 20px; /* Tamanho do botão "Salvar Alterações" */
+    background-color: #f44336; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor em formato de mãozinha */
+}
+
+.back-button:hover {
+    background-color: #e53935; /* Cor de fundo do botão em hover */
+}

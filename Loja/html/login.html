@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define a codificação de caracteres da página como UTF-8, o que garante que caracteres especiais e acentuados sejam corretamente exibidos -->
+    <meta charset="UTF-8">
+    <!-- Define a tag meta de viewport para tornar a página responsiva em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página que aparecerá na aba do navegador -->
+    <title>Login</title>
+    <!-- Link para o arquivo de estilos CSS da página de login -->
+    <link rel="stylesheet" href="../css/login.css?v=2">
+    <!-- Link para o Font Awesome, que fornece ícones, como o ícone de olho para alternar a visibilidade da senha -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Container principal que envolve o conteúdo da página de login -->
+    <div class="login-container">
+        <!-- Cabeçalho da página de login -->
+        <h2>Login</h2><br><br>
+        <!-- Formulário de login -->
+        <form id="loginForm">
+            <!-- Campo de entrada para o nome de usuário, com placeholder indicando o tipo de dado esperado -->
+            <label for="username"></label>
+            <input type="text" id="username" placeholder="Usuário" required>
+            
+            <!-- Campo de senha, com um ícone ao lado para alternar a visibilidade da senha -->
+            <label for="password"></label>
+            <div class="password-container">
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                <!-- Ícone que permitirá ao usuário visualizar ou ocultar a senha digitada -->
+                <i id="togglePassword" class="fa fa-eye"></i>
+            </div>            
+
+            <!-- Botão para submeter o formulário -->
+            <button type="submit">Entrar</button>
+        </form>
+
+        <!-- Mensagem de erro que será exibida caso as credenciais de login sejam inválidas -->
+        <div id="errorMessage" style="display:none; color: red; margin-top: 10px;">
+            Usuário ou senha inválidos!
+        </div>
+    </div>
+
+    <!-- Script que contém a lógica de login e o comportamento do ícone para mostrar/ocultar a senha -->
+    <script src="../js/login.js?v=2"></script>
+</body>
+</html>

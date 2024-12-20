@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define o conjunto de caracteres da página como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura o layout da página para ser responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página exibido na aba do navegador -->
+    <title>Tela do Administrador</title>
+    <!-- Link para o arquivo CSS que estiliza a página -->
+    <link rel="stylesheet" href="../css/adicionar_produto.css?v=2">
+</head>
+<body>
+<!-- Contêiner principal da página para o administrador -->
+<div class="admin-container">
+    <!-- Formulário para adicionar um novo produto -->
+    <div class="product-form">
+        <h2>Adicionar Produto</h2>
+        <!-- Formulário com ID para submeter dados do produto -->
+        <form id="addProductForm">
+            <!-- Campo de texto para inserir o nome do produto -->
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            
+            <!-- Campo de área de texto para inserir a descrição do produto -->
+            <textarea id="productDescription" placeholder="Descrição" required></textarea>
+            
+            <!-- Campo de texto para inserir o preço do produto -->
+            <input type="text" id="productPrice" placeholder="Preço" required>
+            
+            <!-- Campo para carregar a imagem do produto com um estilo personalizado para o botão de upload -->
+            <label for="productImage" class="custom-file-upload"></label>
+            <input type="file" id="productImage" accept="image/*" required>
+            
+            <!-- Contêiner para os botões do formulário -->
+            <div class="button-container">
+                <!-- Link para voltar à página de listagem de produtos -->
+                <a href="../html/listar_produtos_usuario.html" class="back-button">Voltar</a>
+                <!-- Botão para submeter o formulário e adicionar o produto -->
+                <button type="submit" class="right-button">Adicionar Produto</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Link para o arquivo JavaScript que manipula a lógica de adicionar produto -->
+<script src="../js/adicionar_produto.js?v=2"></script>
+</body>
+</html>

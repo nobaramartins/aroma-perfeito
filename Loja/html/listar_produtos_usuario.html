@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Define o tipo de documento como HTML5 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Configura o site para ser responsivo, ajustando-se ao tamanho da tela do dispositivo -->
+    <title>Catálogo de Produtos</title>   <!-- Define o título da página que será exibido na aba do navegador -->
+    <link rel="stylesheet" href="../css/listar_produtos_usuario.css?v=2">    <!-- Importa o arquivo CSS específico para estilizar o catálogo de produtos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Importa a biblioteca Font Awesome para usar ícones, como o de carrinho de compras -->
+</head>
+<body>
+    <div class="catalog-container">  <!-- Contêiner principal para o catálogo -->
+        <header>    <!-- Cabeçalho do catálogo -->
+            <h1>Aroma Perfeito</h1>    <!-- Nome da loja, que serve como título principal -->
+            <div class="header-actions">       <!-- Ações disponíveis no cabeçalho -->
+                <div class="cart-icon-container">
+                    <!-- Ícone do carrinho de compras usando Font Awesome -->
+                    <i class="fas fa-shopping-cart" id="cartIcon"></i>
+                    <!-- Contador para exibir a quantidade de itens no carrinho -->
+                    <span id="cartCounter">0</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção onde os produtos serão listados dinamicamente -->
+        <div id="productList" class="product-list"></div>
+        <!-- O conteúdo será preenchido por um script JavaScript -->
+    </div>
+
+    <!-- Importa o arquivo JavaScript que gerencia a listagem dos produtos -->
+    <script src="../js/listar_produtos_usuario.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte do corpo da página como Arial, com uma alternativa sans-serif caso a primeira não esteja disponível */
+  margin: 0; /* Remove a margem padrão do corpo da página */
+  padding: 0; /* Remove o padding (preenchimento) padrão do corpo da página */
+  background-color: #f4f4f9; /* Define a cor de fundo da página como um cinza muito claro */
+}
+
+/* Contêiner principal */
+.catalog-container {
+  width: 90%; /* Define a largura do contêiner como 90% da largura da tela */
+  margin: auto; /* Centraliza o contêiner na tela */
+  padding: 20px; /* Adiciona 20px de preenchimento ao redor do conteúdo dentro do contêiner */
+}
+
+/* Cabeçalho */
+header {
+  display: flex; /* Usa o modelo de layout flexbox para o cabeçalho */
+  justify-content: space-between; /* Distribui o conteúdo do cabeçalho com espaço entre os itens */
+  align-items: center; /* Alinha verticalmente os itens no centro */
+  margin-bottom: 20px; /* Adiciona um espaço de 20px abaixo do cabeçalho */
+}
+
+/* Título do cabeçalho */
+header h1 {
+  font-size: 2rem; /* Define o tamanho da fonte como 2 vezes o tamanho base */
+  color: #333; /* Define a cor do título como um cinza escuro */
+  margin: 0; /* Remove a margem padrão do título */
+}
+
+/* Ações no cabeçalho (como botões e ícones) */
+.header-actions {
+  display: flex; /* Usa flexbox para organizar os itens no cabeçalho */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 20px; /* Adiciona 20px de espaço entre os itens */
+}
+
+/* Estilo do botão de checkout */
+#checkoutButton {
+  background-color: #4CAF50; /* Define a cor de fundo do botão como verde */
+  color: white; /* Define a cor do texto do botão como branco */
+  border: none; /* Remove a borda padrão do botão */
+  padding: 10px 20px; /* Adiciona 10px de preenchimento vertical e 20px horizontal no botão */
+  font-size: 1rem; /* Define o tamanho da fonte como 1rem */
+  border-radius: 5px; /* Adiciona bordas arredondadas ao botão com raio de 5px */
+  cursor: pointer; /* Define o cursor como ponteiro quando passar sobre o botão */
+}
+
+/* Efeito de hover no botão de checkout */
+#checkoutButton:hover {
+  background-color: #45a049; /* Muda a cor de fundo do botão para um tom mais escuro de verde ao passar o mouse */
+}
+
+/* Contêiner para o ícone do carrinho de compras */
+.cart-icon-container {
+  position: relative; /* Define a posição como relativa para poder posicionar o contador do carrinho */
+}
+
+/* Estilo do ícone do carrinho de compras */
+#cartIcon {
+  font-size: 30px; /* Define o tamanho do ícone do carrinho como 30px */
+  color: #333; /* Define a cor do ícone como cinza escuro */
+  cursor: pointer; /* Define o cursor como ponteiro quando passar sobre o ícone */
+}
+
+/* Contador de itens no carrinho */
+#cartCounter {
+  position: absolute; /* Posiciona o contador de forma absoluta em relação ao ícone */
+  top: -5px; /* Coloca o contador ligeiramente acima do ícone */
+  right: -10px; /* Coloca o contador ligeiramente à direita do ícone */
+  background-color: red; /* Define a cor de fundo do contador como vermelho */
+  color: white; /* Define a cor do texto dentro do contador como branco */
+  font-size: 12px; /* Define o tamanho da fonte dentro do contador */
+  font-weight: bold; /* Torna a fonte do contador em negrito */
+  border-radius: 50%; /* Torna o contador circular */
+  width: 20px; /* Define a largura do contador como 20px */
+  height: 20px; /* Define a altura do contador como 20px */
+  display: flex; /* Usa flexbox para centralizar o texto dentro do contador */
+  justify-content: center; /* Alinha o texto centralmente no eixo horizontal */
+  align-items: center; /* Alinha o texto centralmente no eixo vertical */
+  display: none; /* Inicialmente o contador é oculto */
+}
+
+/* Estilos para a lista de produtos */
+.product-list {
+  display: flex; /* Usa o modelo de layout flexbox para a lista de produtos */
+  flex-wrap: wrap; /* Permite que os itens da lista se movam para a linha seguinte quando não houver espaço suficiente */
+  gap: 20px; /* Adiciona 20px de espaço entre os itens da lista */
+}
+
+/* Estilo do card de cada produto */
+.product-card {
+  display: flex; /* Usa flexbox para organizar os itens dentro do card do produto */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 20px; /* Adiciona 20px de espaço entre a imagem e o conteúdo do card */
+  background: #fff; /* Define o fundo do card como branco */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao redor do card */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao card com raio de 10px */
+  padding: 15px; /* Adiciona 15px de preenchimento dentro do card */
+  width: 100%; /* O card ocupa toda a largura disponível */
+}
+
+/* Estilo da imagem dentro do card do produto */
+.product-card img {
+  width: 150px; /* Define a largura da imagem como 150px */
+  height: 150px; /* Define a altura da imagem como 150px */
+  object-fit: cover; /* Garante que a imagem cubra completamente o espaço disponível, mantendo a proporção */
+  border-radius: 10px; /* Adiciona bordas arredondadas à imagem */
+}
+
+/* Título do produto dentro do card */
+.product-card h3 {
+  margin: 10px 0; /* Adiciona uma margem de 10px acima e abaixo do título */
+  font-size: 1.2rem; /* Define o tamanho da fonte do título como 1.2rem */
+  color: #333; /* Define a cor do título como cinza escuro */
+}
+
+/* Descrição do produto dentro do card */
+.product-card p {
+  margin: 5px 0; /* Adiciona uma margem de 5px acima e abaixo da descrição */
+  font-size: 0.9rem; /* Define o tamanho da fonte da descrição como 0.9rem */
+  color: #666; /* Define a cor da descrição como cinza claro */
+}
+
+/* Preço do produto dentro do card */
+.product-card .price {
+  font-size: 1rem; /* Define o tamanho da fonte do preço como 1rem */
+  color: #000; /* Define a cor do preço como preta */
+  font-weight: bold; /* Torna o preço em negrito */
+}
+
+/* Estilo do ícone de adicionar ao carrinho */
+.add-to-cart-icon {
+  font-size: 30px; /* Define o tamanho do ícone de adicionar ao carrinho como 30px */
+  color: #4CAF50; /* Define a cor do ícone como verde */
+  cursor: pointer; /* Define o cursor como ponteiro quando passar sobre o ícone */
+  margin-top: 10px; /* Adiciona uma margem superior de 10px ao ícone */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de transformação (escala) */
+}
+
+/* Efeito de hover no ícone de adicionar ao carrinho */
+.add-to-cart-icon:hover {
+  transform: scale(1.1); /* Ao passar o mouse sobre o ícone, ele aumenta de tamanho em 10% */
+}

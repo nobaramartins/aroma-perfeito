@@ -1,0 +1,164 @@
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte da página */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  background-color: #f4f4f9; /* Define a cor de fundo da página */
+  color: #333; /* Define a cor do texto */
+  height: 100vh; /* Faz a altura da página ocupar 100% da tela */
+  display: flex; /* Usado para centralizar o conteúdo */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+}
+
+/* Container principal do formulário de administração */
+.admin-container {
+  width: 80%; /* Define a largura do container como 80% da tela */
+  max-width: 600px; /* Limita a largura máxima do container a 600px */
+  padding: 20px; /* Adiciona padding interno */
+  background: #fff; /* Cor de fundo do container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do container */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Container para os botões */
+.button-container {
+  display: flex; /* Exibe os botões de forma flexível */
+  justify-content: flex-start; /* Alinha o botão "Voltar" à esquerda */
+  margin-bottom: 10px; /* Adiciona espaço abaixo */
+}
+
+/* Estilo do formulário de produtos */
+.product-form {
+  margin-top: 20px; /* Adiciona espaço superior ao formulário */
+}
+
+/* Estilo dos rótulos dentro do formulário */
+.product-form label {
+  display: block; /* Exibe os rótulos como blocos */
+  margin-bottom: 5px; /* Adiciona espaço abaixo do rótulo */
+  font-weight: bold; /* Deixa o texto do rótulo em negrito */
+}
+
+/* Estilo dos campos de entrada (input) e área de texto (textarea) */
+.product-form input,
+.product-form textarea {
+  width: 100%; /* Define a largura dos campos para 100% */
+  padding: 8px; /* Adiciona padding interno */
+  margin-bottom: 10px; /* Adiciona margem inferior */
+  font-size: 16px; /* Define o tamanho da fonte */
+  border: 1px solid #ccc; /* Define a borda dos campos */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Garante que o padding e a borda não afetem o tamanho total */
+}
+
+/* Estilo do botão dentro do formulário */
+.product-form button {
+  padding: 6px 12px; /* Define o padding do botão */
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mãozinha ao passar o mouse */
+  width: auto; /* Ajusta a largura do botão para o conteúdo */
+  font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+}
+
+.product-form button:hover {
+  background-color: #45a049; /* Cor de fundo do botão em hover */
+}
+
+/* Estilo do campo de entrada para arquivos (input[type="file"]) */
+.product-form input[type="file"] {
+  width: 100%; /* Define a largura para 100% */
+  padding: 8px; /* Adiciona padding interno */
+  margin-bottom: 10px; /* Adiciona margem inferior */
+  border: 1px solid #ccc; /* Define a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mãozinha */
+}
+
+/* Container para os botões dentro do formulário */
+.product-form .button-container {
+  display: flex; /* Exibe os botões de forma flexível */
+  justify-content: space-between; /* Espaço entre os botões */
+  gap: 10px; /* Espaço de 10px entre os botões */
+}
+
+/* Estilo do botão "Voltar" */
+.back-button {
+  padding: 10px 20px; /* Define o padding do botão */
+  background-color: #f44336; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto */
+  font-size: 1rem; /* Tamanho da fonte */
+  text-decoration: none; /* Remove a decoração de texto (underline) */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mãozinha */
+}
+
+.back-button:hover {
+  background-color: #e53935; /* Cor de fundo do botão em hover */
+}
+
+/* Estilo do título dentro do formulário de produtos */
+.product-form h2 {
+  text-align: center; /* Alinha o título ao centro */
+  font-size: 24px; /* Define o tamanho da fonte */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+  color: #333; /* Cor do texto */
+}
+
+/* Estilo para o container de título e botão */
+.title-and-button {
+  display: flex; /* Exibe o título e o botão de forma flexível */
+  justify-content: space-between; /* Espaço entre o título e o botão */
+  align-items: flex-end; /* Alinha os itens ao fundo */
+  margin-top: 20px; /* Adiciona espaço superior */
+}
+
+/* Estilo do título */
+.title {
+  flex: 1; /* Permite que o título ocupe o espaço restante */
+  text-align: left; /* Alinha o título à esquerda */
+}
+
+.title h2 {
+  font-size: 24px; /* Tamanho da fonte do título */
+  color: #333; /* Cor do título */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Estilo para o botão à direita */
+.button-container-right {
+  text-align: right; /* Alinha o botão à direita */
+}
+
+.button-container-right .submit-button {
+  padding: 10px 20px; /* Define o padding do botão */
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mãozinha */
+  text-decoration: none; /* Remove underline do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+.button-container-right .submit-button:hover {
+  background-color: #45a049; /* Cor de fundo do botão em hover */
+}
+
+/* Estilo dos botões */
+button {
+  padding: 10px 20px; /* Define o tamanho do botão */
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mãozinha */
+}
+
+button:hover {
+  background-color: #45a049; /* Cor de fundo do botão em hover */
+}

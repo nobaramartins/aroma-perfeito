@@ -1,0 +1,137 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte do corpo da página */
+  margin: 0; /* Remove as margens padrões */
+  padding: 0; /* Remove o padding padrão */
+  background-color: #f4f4f9; /* Define uma cor de fundo clara para a página */
+}
+
+/* Contêiner principal do catálogo */
+.catalog-container {
+  width: 90%; /* Define a largura como 90% da tela */
+  margin: auto; /* Centraliza o contêiner na página */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Cabeçalho do catálogo */
+header {
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os itens em uma coluna */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  margin-bottom: 20px; /* Adiciona um espaçamento abaixo do cabeçalho */
+}
+
+/* Título principal */
+header h1 {
+  font-size: 2rem; /* Define o tamanho da fonte do título */
+  color: #333; /* Define a cor do título */
+  margin-bottom: 10px; /* Adiciona um pequeno espaçamento abaixo do título */
+}
+
+/* Contêiner de ações (como botões) no cabeçalho */
+.actions {
+  display: flex; /* Usa flexbox para organizar os itens em linha */
+  gap: 10px; /* Adiciona espaçamento entre os botões */
+}
+
+/* Estilo para os botões de ação */
+.actions button {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branca */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 15px; /* Adiciona espaçamento interno nos botões */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Aponta o cursor como uma mãozinha */
+  font-size: 1rem; /* Define o tamanho da fonte */
+}
+
+/* Estilo para os botões de ação quando o mouse passa por cima */
+.actions button:hover {
+  background-color: #45a049; /* Muda a cor para um verde mais escuro */
+}
+
+/* Lista de produtos no catálogo */
+.product-list {
+  display: flex; /* Usa flexbox para exibir os itens */
+  flex-direction: column; /* Exibe os itens em uma coluna */
+  gap: 10px; /* Espaçamento entre os itens */
+}
+
+/* Cartão de cada produto */
+.product-card {
+  display: flex; /* Organiza os itens em linha */
+  align-items: center; /* Alinha os itens verticalmente */
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  padding: 15px; /* Adiciona espaçamento interno */
+  background: #fff; /* Cor de fundo branca */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra sutil ao redor do card */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin-bottom: 10px; /* Espaçamento entre os cartões */
+}
+
+/* Estilo para a imagem do produto */
+.product-card img {
+  width: 120px; /* Define a largura da imagem */
+  height: 120px; /* Define a altura da imagem */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço mantendo a proporção */
+  border-radius: 5px; /* Bordas arredondadas para a imagem */
+}
+
+/* Seção de informações do produto */
+.product-card .info {
+  display: flex; /* Usa flexbox para organizar os itens */
+  flex-direction: column; /* Organiza os itens verticalmente */
+  flex: 1; /* Faz a seção ocupar o espaço restante */
+}
+
+/* Nome do produto */
+.product-card h3 {
+  font-size: 1.2rem; /* Define o tamanho da fonte do nome */
+  color: #333; /* Cor do texto */
+  margin: 0; /* Remove a margem */
+}
+
+/* Descrição do produto */
+.product-card p {
+  font-size: 0.9rem; /* Tamanho da fonte da descrição */
+  color: #666; /* Cor do texto cinza */
+  margin: 5px 0; /* Adiciona margem entre as linhas */
+}
+
+/* Preço do produto */
+.product-card .price {
+  font-size: 1rem; /* Tamanho da fonte do preço */
+  color: black; /* Cor do texto preta */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Contêiner de ações dentro do card do produto */
+.product-card .actions {
+  display: flex; /* Usa flexbox para organizar os botões */
+  gap: 5px; /* Adiciona espaçamento entre os botões */
+}
+
+/* Estilo para os botões de ação no card */
+.product-card .actions button {
+  padding: 5px 10px; /* Espaçamento interno do botão */
+  font-size: 0.9rem; /* Tamanho da fonte do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Aponta o cursor como uma mãozinha */
+}
+
+/* Estilo para o botão de edição */
+.product-card .actions .edit {
+  background-color: #FF9800; /* Cor de fundo laranja */
+  color: white; /* Cor do texto branca */
+}
+
+/* Estilo para o botão de deletar */
+.product-card .actions .delete {
+  background-color: #f44336; /* Cor de fundo vermelha */
+  color: white; /* Cor do texto branca */
+}
+
+/* Efeito de hover para os botões de ação no card */
+.product-card .actions button:hover {
+  opacity: 0.8; /* Diminui a opacidade ao passar o mouse */
+}

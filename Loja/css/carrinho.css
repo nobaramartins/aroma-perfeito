@@ -1,0 +1,158 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada no corpo da página */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #f4f4f9; /* Define a cor de fundo do corpo */
+}
+
+/* Container principal para o carrinho */
+.cart-container {
+    width: 90%; /* Define a largura do contêiner como 90% da largura da tela */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Adiciona preenchimento interno */
+}
+
+/* Estilo do cabeçalho do carrinho */
+header {
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Organiza os itens na vertical */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo */
+}
+
+/* Estilo do título do cabeçalho */
+header h1 {
+    font-size: 2rem; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Lista de itens do carrinho */
+.cart-list {
+    display: flex; /* Usa layout flexível */
+    flex-direction: column; /* Organiza os itens na vertical */
+    gap: 20px; /* Adiciona espaçamento entre os itens */
+}
+
+/* Estilo de cada item no carrinho */
+.cart-item {
+    display: flex; /* Usa layout flexível */
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: space-between; /* Distribui os itens com espaço entre eles */
+    background: #fff; /* Cor de fundo branca */
+    padding: 10px; /* Adiciona preenchimento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo para a imagem de cada item */
+.cart-item img {
+    width: 80px; /* Define a largura da imagem */
+    height: 80px; /* Define a altura da imagem */
+    object-fit: cover; /* Garante que a imagem seja recortada para preencher o espaço */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+/* Estilo para os detalhes do item */
+.item-details {
+    flex-grow: 1; /* Permite que os detalhes cresçam e ocupem o espaço restante */
+}
+
+/* Estilo para o preço do item */
+.cart-item .price {
+    font-weight: bold; /* Torna o preço em negrito */
+}
+
+/* Estilo para o campo de entrada (quantidade) de cada item */
+.cart-item input {
+    width: 60px; /* Define a largura do campo */
+    padding: 5px; /* Preenchimento interno */
+    margin-right: 10px; /* Espaço à direita do campo */
+}
+
+/* Estilo para as ações do carrinho (botões de excluir, etc.) */
+.cart-actions {
+    display: flex; /* Usa layout flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Estilo para os botões de ação */
+.cart-actions button {
+    background-color: #f44336; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    padding: 5px 10px; /* Adiciona preenchimento */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+    margin-left: 10px; /* Espaço à esquerda do botão */
+}
+
+/* Estilo para o efeito ao passar o mouse sobre os botões */
+.cart-actions button:hover {
+    opacity: 0.8; /* Reduz a opacidade para efeito visual */
+}
+
+/* Estilo para o total de itens no carrinho */
+.total-item {
+    background-color: #f9f9f9; /* Cor de fundo suave */
+    padding: 10px; /* Preenchimento interno */
+    font-size: 1.2rem; /* Tamanho da fonte maior */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 20px; /* Espaço acima */
+    display: flex; /* Layout flexível */
+    justify-content: flex-end; /* Alinha o total à direita */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para o preço total */
+.total-price {
+    font-size: 1.5rem; /* Tamanho da fonte maior */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 20px; /* Espaço acima */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+/* Contêiner flexível para os botões */
+.button-container {
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Distribui os botões nos extremos */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-top: 20px; /* Espaço acima */
+}
+
+/* Estilo para o botão "Voltar" */
+.back-button {
+    display: inline-block; /* Faz com que o botão funcione como um link */
+    background-color: #f44336; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto branca */
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 8px 16px; /* Adiciona preenchimento */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o efeito ao passar o mouse sobre o botão "Voltar" */
+.back-button:hover {
+    opacity: 0.8; /* Reduz a opacidade para efeito visual */
+}
+
+/* Estilo para o botão de checkout */
+#checkoutButton {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    border: none; /* Remove a borda */
+    padding: 8px 16px; /* Preenchimento interno */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+    width: auto; /* Ajusta a largura automaticamente */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para o efeito ao passar o mouse sobre o botão de checkout */
+#checkoutButton:hover {
+    opacity: 0.8; /* Reduz a opacidade para efeito visual */
+}

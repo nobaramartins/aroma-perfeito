@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8, garantindo suporte a caracteres especiais e acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que o layout seja responsivo e se ajuste corretamente a diferentes tamanhos de tela, especialmente em dispositivos móveis -->
+    <title>Editar Produto</title> <!-- Define o título da página que será exibido na aba do navegador -->
+    <link rel="stylesheet" href="../css/editar_produto.css?v=2"> <!-- Vincula o arquivo CSS externo para estilizar a página; o parâmetro "v=2" indica que é a versão 2 do arquivo -->
+</head>
+<body>
+    <div class="edit-container"> <!-- Contêiner principal da página, onde o conteúdo do formulário será exibido -->
+        <header>
+            <h1>Editar Produto</h1> <!-- Título principal da página, indicando que o usuário está editando um produto -->
+        </header>
+
+        <form id="editProductForm"> <!-- Formulário para editar as informações do produto, com o ID "editProductForm" para facilitar a manipulação via JavaScript -->
+            <label for="productName">Nome do Produto</label> <!-- Rótulo para o campo de nome do produto -->
+            <input type="text" id="productName" required> <!-- Campo de entrada de texto para o nome do produto, com a validação "required" para garantir que o campo não fique vazio -->
+
+            <label for="productDescription">Descrição</label> <!-- Rótulo para o campo de descrição do produto -->
+            <textarea id="productDescription" required></textarea> <!-- Campo de texto expandido (textarea) para a descrição do produto, também com validação "required" -->
+
+            <label for="productPrice">Preço:</label> <!-- Rótulo para o campo de preço do produto -->
+            <input type="text" id="productPrice" required> <!-- Campo de entrada de texto para o preço do produto, com validação "required" -->
+
+            <label for="productImage">URL da Imagem</label> <!-- Rótulo para o campo de URL da imagem do produto -->
+            <input type="text" id="productImage" placeholder="Cole a URL da imagem"> <!-- Campo de entrada de texto para a URL da imagem, com texto de preenchimento (placeholder) informando o usuário sobre o que inserir -->
+
+            <label for="productImageUpload">Ou envie uma nova imagem:</label> <!-- Rótulo para o campo de upload de uma nova imagem -->
+            <input type="file" id="productImageUpload" accept="image/*"> <!-- Campo de entrada de arquivo, permitindo que o usuário envie uma imagem, limitado a arquivos de imagem com "accept='image/*'" -->
+
+            <div class="image-preview"> <!-- Contêiner para a pré-visualização da imagem -->
+                <img id="imagePreview" src="" alt="Pré-visualização da imagem" /> <!-- Imagem de pré-visualização, com ID "imagePreview" para manipulação via JavaScript -->
+            </div><br><br> <!-- Espaço extra (quebras de linha) para separar o campo de imagem da área do botão -->
+            
+            <div class="form-buttons">
+                <a href="../html/listar_produtos.html?v=2" class="back-button">Voltar</a>
+                <button type="submit">Salvar Alterações</button>
+            </div>
+        </form>
+    </div>
+    <script src="../js/editar_produto.js?v=2"></script> <!-- Vincula o arquivo JavaScript responsável por adicionar funcionalidades à página de edição, como a pré-visualização da imagem -->
+</body>
+</html>

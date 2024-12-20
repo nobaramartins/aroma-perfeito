@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres da página como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura o layout da página para ser responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página que será exibido na aba do navegador -->
+    <title>Carrinho de Compras</title>
+    <!-- Link para o arquivo CSS que estiliza a página do carrinho de compras -->
+    <link rel="stylesheet" href="../css/carrinho.css?v=2">
+</head>
+<body>
+    <!-- Contêiner principal do carrinho de compras -->
+    <div class="cart-container">
+        <!-- Cabeçalho da página com o título "Carrinho de Compras" -->
+        <header>
+            <h1>Carrinho de Compras</h1>
+        </header>
+
+        <!-- Div que irá conter a lista de itens do carrinho -->
+        <div id="cartList" class="cart-list"></div>
+
+        <!-- Contêiner dos botões abaixo da lista de produtos -->
+        <div class="button-container">
+            <!-- Link para voltar à página de listagem de produtos -->
+            <a href="../html/listar_produtos_usuario.html" class="back-button">Voltar</a>
+            <!-- Botão para prosseguir para a próxima etapa do carrinho -->
+            <button id="checkoutButton">Prosseguir</button>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript que manipula a lógica do carrinho de compras -->
+    <script src="../js/carrinho.js?v=2"></script>
+</body>
+</html>

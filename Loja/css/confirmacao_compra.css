@@ -1,0 +1,60 @@
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte como Arial, ou qualquer outra fonte sans-serif caso a Arial não esteja disponível */
+    background-color: #f4f4f9; /* Define um fundo claro (cinza suave) para a página */
+    color: #333; /* Define a cor do texto como um cinza escuro */
+    margin: 0; /* Remove a margem padrão do corpo da página */
+    padding: 0; /* Remove o padding padrão do corpo da página */
+    display: flex; /* Utiliza o modelo de layout flexbox para o corpo da página */
+    flex-direction: column; /* Organiza os elementos de forma vertical (em coluna) */
+    justify-content: center; /* Centraliza os elementos no eixo vertical (dentro da altura da tela) */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+    height: 100vh; /* Define a altura da página como 100% da altura da janela de visualização */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo do título (h1) */
+h1 {
+    color: #4CAF50; /* Define a cor do título como verde (um tom de verde médio) */
+    font-size: 2.5rem; /* Define o tamanho da fonte do título como 2.5 vezes o tamanho da fonte base */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px entre o título e os elementos seguintes */
+}
+
+/* Estilo do parágrafo (p) */
+p {
+    font-size: 1.2rem; /* Define o tamanho da fonte do parágrafo como 1.2 vezes o tamanho da fonte base */
+    margin-bottom: 30px; /* Adiciona um espaçamento inferior de 30px entre o parágrafo e os elementos seguintes */
+    line-height: 1.6; /* Define o espaçamento entre linhas como 1.6 vezes o tamanho da altura da fonte */
+}
+
+/* Estilo do botão de voltar */
+.back-button {
+    text-decoration: none; /* Remove o sublinhado do link, caso seja um link */
+    background-color: #007BFF; /* Define a cor de fundo do botão como azul */
+    color: white; /* Define a cor do texto dentro do botão como branco */
+    padding: 10px 20px; /* Adiciona 10px de espaçamento vertical e 20px de espaçamento horizontal ao redor do texto do botão */
+    font-size: 1rem; /* Define o tamanho da fonte do botão como 1rem (tamanho base) */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão com um raio de 5px */
+    transition: background-color 0.3s; /* Define uma transição suave para a cor de fundo ao passar o mouse (em 0.3 segundos) */
+}
+
+/* Efeito de hover (passar o mouse) sobre o botão de voltar */
+.back-button:hover {
+    background-color: #0056b3; /* Quando o mouse passa sobre o botão, a cor de fundo muda para um azul mais escuro */
+}
+
+/* Responsividade para telas pequenas (max-width: 600px) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte do título para 2rem em telas pequenas */
+    }
+    
+    p {
+        font-size: 1rem; /* Reduz o tamanho da fonte do parágrafo para 1rem em telas pequenas */
+    }
+
+    .back-button {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão para 0.9rem em telas pequenas */
+        padding: 8px 16px; /* Reduz o espaçamento ao redor do texto do botão em telas pequenas */
+    }
+}

@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+  margin: 0;               /* Remove as margens padrão de todos os elementos */
+  padding: 0;              /* Remove os preenchimentos padrão de todos os elementos */
+  box-sizing: border-box; /* Garante que o padding e as bordas sejam incluídos nas dimensões de elementos */
+}
+
+/* Estilo do body */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte da página como Arial ou, se não disponível, uma fonte sans-serif genérica */
+  min-height: 100vh;              /* Garante que a altura mínima da página seja 100% da altura da janela de visualização */
+  display: flex;                  /* Utiliza o modelo de layout flexbox */
+  align-items: center;            /* Centraliza verticalmente o conteúdo */
+  justify-content: center;        /* Centraliza horizontalmente o conteúdo */
+}
+
+/* Container principal */
+.login-container {
+  width: 100%;              /* O container ocupa 100% da largura disponível */
+  max-width: 400px;         /* Limita a largura máxima do container a 400px */
+  padding: 20px;            /* Adiciona espaçamento interno de 20px em todas as direções */
+  background: #ffffff;      /* Define o fundo como branco */
+  border-radius: 10px;      /* Arredonda os cantos do container com um raio de 10px */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aplica uma sombra suave ao redor do container */
+  text-align: center;       /* Centraliza o texto dentro do container */
+}
+
+/* Título do formulário */
+.login-container h1 {
+  font-size: 2rem;         /* Define o tamanho da fonte como 2 vezes o tamanho padrão */
+  color: #4CAF50;          /* Define a cor do texto como verde (#4CAF50) */
+  margin-bottom: 20px;     /* Adiciona um espaço de 20px abaixo do título */
+}
+
+/* Inputs de texto */
+.login-container input {
+  width: 100%;             /* Os campos de entrada ocupam toda a largura disponível */
+  padding: 12px 15px;      /* Adiciona espaçamento interno de 12px vertical e 15px horizontal */
+  margin: 10px 0;          /* Adiciona um espaçamento de 10px acima e abaixo de cada campo */
+  border: 1px solid #ccc; /* Define uma borda fina de cor cinza clara */
+  border-radius: 5px;     /* Arredonda os cantos dos campos de entrada com um raio de 5px */
+  font-size: 1rem;         /* Define o tamanho da fonte como 1 rem */
+}
+
+/* Botão de login */
+.login-container button {
+  width: 100%;             /* O botão ocupa toda a largura disponível */
+  padding: 12px;           /* Adiciona 12px de espaçamento interno vertical */
+  font-size: 1rem;         /* Define o tamanho da fonte do botão como 1 rem */
+  color: white;            /* Define a cor do texto do botão como branco */
+  background-color: #4CAF50; /* Define a cor de fundo do botão como verde */
+  border: none;            /* Remove a borda do botão */
+  border-radius: 5px;      /* Arredonda os cantos do botão com um raio de 5px */
+  cursor: pointer;        /* Aplica o cursor de ponteiro quando o mouse passa sobre o botão */
+  transition: background-color 0.3s ease; /* Transição suave para a mudança de cor do fundo */
+}
+
+/* Hover no botão */
+.login-container button:hover {
+  background-color: #45a049; /* Muda a cor de fundo do botão para um tom mais escuro de verde quando o mouse passa sobre ele */
+}
+
+/* Link de registro ou recuperação de senha */
+.login-container a {
+  display: inline-block;    /* Exibe o link como um bloco em linha */
+  margin-top: 10px;         /* Adiciona um espaço de 10px acima do link */
+  font-size: 0.9rem;        /* Define o tamanho da fonte do link como 0.9 rem */
+  color: #4CAF50;           /* Define a cor do texto do link como verde */
+  text-decoration: none;    /* Remove o sublinhado do link */
+}
+
+/* Hover no link */
+.login-container a:hover {
+  text-decoration: underline; /* Adiciona o sublinhado quando o mouse passa sobre o link */
+}
+
+/* Container de senha */
+.password-container {
+  position: relative;       /* Define o posicionamento como relativo para posicionar elementos dentro dele */
+}
+
+/* Ícone de visibilidade da senha */
+#togglePassword {
+  position: absolute;       /* Posiciona o ícone de forma absoluta dentro do container */
+  right: 10px;              /* Alinha o ícone à direita com 10px de distância */
+  top: 50%;                 /* Centraliza verticalmente o ícone */
+  transform: translateY(-50%); /* Ajusta o ícone para ficar exatamente no meio verticalmente */
+  cursor: pointer;         /* Aplica o cursor de ponteiro ao passar sobre o ícone */
+  color: #888;              /* Define a cor do ícone como cinza claro */
+  font-size: 1.2em;         /* Define o tamanho do ícone como 1.2 vezes o tamanho padrão */
+}
+
+/* Estilo dos campos de senha */
+.password-container input[type="password"], 
+.password-container input[type="text"] {
+  padding-right: 30px; /* Adiciona espaço à direita do campo de entrada para acomodar o ícone */
+}
+
+/* Ícone da senha */
+.password-container i {
+  font-size: 18px;        /* Define o tamanho da fonte do ícone como 18px */
+  color: #573b8a;         /* Define a cor do ícone como roxo escuro */
+}
+
+/* Hover no ícone de senha */
+.password-container i:hover {
+  color: #333;            /* Muda a cor do ícone para cinza escuro ao passar o mouse sobre ele */
+}

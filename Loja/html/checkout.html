@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Define o conjunto de caracteres da página como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura o layout da página para ser responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página que será exibido na aba do navegador -->
+    <title>Dados de Compra</title>
+    <!-- Link para o arquivo CSS que estiliza a página de dados de compra -->
+    <link rel="stylesheet" href="../css/checkout.css?v=2">
+</head>
+<body>
+    <!-- Contêiner principal do formulário para inserir dados de entrega e pagamento -->
+    <div class="form-container">
+        <!-- Título principal da página, explicando o objetivo do formulário -->
+        <h1>Informe seus Dados de Entrega e Pagamento</h1>
+
+        <!-- Formulário para capturar os dados do usuário -->
+        <form id="dadosCompraForm">
+            <!-- Campo para inserir o nome completo do cliente -->
+            <input type="text" id="nome" name="nome" required placeholder="Nome Completo">
+
+            <!-- Campo para inserir o telefone do cliente com validação de formato -->
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone (DD) XXXXX-XXXX" required maxlength="15" pattern="\(\d{2}\) \d{5}-\d{4}" title="Por favor, insira um número de telefone válido no formato (DD) XXXXX-XXXX">
+
+            <!-- Campo para inserir o CEP de entrega -->
+            <input type="text" id="cep" name="cep" required placeholder="CEP">
+
+            <!-- Campo para inserir o bairro de entrega -->
+            <input type="text" id="bairro" name="bairro" required placeholder="Bairro">
+
+            <!-- Campo para inserir a rua de entrega -->
+            <input type="text" id="rua" name="rua" required placeholder="Rua">
+
+            <!-- Campo para inserir o número da casa ou apartamento -->
+            <input type="text" id="numero" name="numero" required placeholder="Número da casa">
+
+            <!-- Campo para inserir a cidade de entrega -->
+            <input type="text" id="cidade" name="cidade" required placeholder="Cidade">
+
+            <!-- Campo para inserir o estado de entrega -->
+            <input type="text" id="estado" name="estado" required placeholder="Estado">
+
+            <!-- Campo de seleção para escolher a forma de pagamento -->
+            <select id="formaPagamento" name="formaPagamento" required>
+                <option value="" disabled selected>Selecione a Forma de Pagamento</option>
+                <option value="pix">Pix</option>
+                <option value="boleto">Boleto</option>
+            </select>
+
+            <!-- Contêiner dos botões de navegação e ação -->
+            <div class="buttons">
+                <!-- Botão para voltar à página do carrinho -->
+                <button type="button" class="voltar" onclick="window.location.href='../html/carrinho.html';">Voltar</button>
+                <!-- Botão para finalizar a compra -->
+                <button type="submit" class="finalizar">Finalizar Compra</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <!-- Link para o arquivo JavaScript que manipula a lógica de validação e envio do formulário -->
+    <script src="../js/checkout.js?v=2"></script>
+</body>
+</html>
